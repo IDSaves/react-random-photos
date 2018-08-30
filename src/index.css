@@ -1,7 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #eefaff;
+  background-color: #ede7f6;
+}
+.main{
+  background-color: #673ab7;
+  border-radius: 10px;
 }
 
 .button{
@@ -19,21 +23,31 @@ body {
 
 .button.active{
   background-color: #d05ce3;
-  width: 200px !important;
+  width: 100% !important;
+  border-radius: 10px;
   cursor: default;
 }
 
 .image{
+  margin-top: 50px;
   transition: all .3s;
-}
-
-.image .img-fluid{
+  max-width: 450px;
+  max-height: 350px;
   border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
-  transition: all .3s;
-  height: 350px;
+}
+.image.hide{
+  max-height: 0px;
+  margin-top: 0px;
 }
 
-.image.hide .img-fluid {
-  height: 0px;
+.image.hide img{
+  opacity: 0;
+}
+
+.image img{
+  border-radius: 10px;
+  transition: all .1s;
 }
