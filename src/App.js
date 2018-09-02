@@ -28,7 +28,7 @@ class App extends Component {
               </div>
               <center className="image-block ml-3 mr-3">
                 <div className={status ? "image" : "image hide"}>
-                    <img className="img-fluid" src={'https://picsum.photos/g/900/500/?random' + img_refresh_key} onLoad={this.onLoadImage} ref="image"/>
+                    <img className="img-fluid" src={'https://picsum.photos/900/500/?random' + img_refresh_key} onLoad={this.onLoadImage} ref="image"/>
                 </div>
                 <a className={status ? "download mb-0" : "download hide mb-0"} href={this.refs.image ? this.refs.image.src : ''} target="_blank">Download</a>
               </center>
